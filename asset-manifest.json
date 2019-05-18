@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/video-clone/static/css/main.0f1aed7e.chunk.css",
-    "main.js": "/video-clone/static/js/main.8cfc52b6.chunk.js",
-    "main.js.map": "/video-clone/static/js/main.8cfc52b6.chunk.js.map",
+    "main.js": "/video-clone/static/js/main.18883ae4.chunk.js",
+    "main.js.map": "/video-clone/static/js/main.18883ae4.chunk.js.map",
     "runtime~main.js": "/video-clone/static/js/runtime~main.a5962bf7.js",
     "runtime~main.js.map": "/video-clone/static/js/runtime~main.a5962bf7.js.map",
     "static/js/2.34b6a278.chunk.js": "/video-clone/static/js/2.34b6a278.chunk.js",
     "static/js/2.34b6a278.chunk.js.map": "/video-clone/static/js/2.34b6a278.chunk.js.map",
     "index.html": "/video-clone/index.html",
-    "precache-manifest.009c5fe1b43519bc7b22fa9c1a4c142d.js": "/video-clone/precache-manifest.009c5fe1b43519bc7b22fa9c1a4c142d.js",
+    "precache-manifest.d775d731620c9f9d2b3097d4183b948e.js": "/video-clone/precache-manifest.d775d731620c9f9d2b3097d4183b948e.js",
     "service-worker.js": "/video-clone/service-worker.js",
     "static/css/main.0f1aed7e.chunk.css.map": "/video-clone/static/css/main.0f1aed7e.chunk.css.map"
   }
