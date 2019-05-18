@@ -15,6 +15,8 @@ A aplicação completa pode ser visualizada [aqui](https://will-amaral.github.io
 
 #### Para executar
 
+Antes de iniciar o seu projeto, não se esqueça de adicionar a chave da sua API do Youtube às variáveis de ambiente como `REACT_APP_API_KEY`. Para mais informações sobre chaves de API do Youtube, visite [a página do Google Developer](https://developers.google.com/youtube/v3/).
+
 - `git clone git@github.com:will-amaral/video-clone.git`
 - `cd video-clone`
 - `yarn` (instala todas as dependências)

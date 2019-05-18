@@ -13,7 +13,6 @@ import VideoList from './components/video-list';
 const API_KEY = process.env.REACT_APP_API_KEY;
 const opts = { maxResults: 6, key: API_KEY, type: 'video' };  
 
-
 class App extends Component {
   constructor(props) {
     super(props);
@@ -40,7 +39,6 @@ class App extends Component {
     this.setState({
         videos: videos.results
       });
-    console.log(videos);
   }
 
   handleChange(event) {
@@ -52,7 +50,6 @@ class App extends Component {
   }
 
   onSelect(detail) {
-    console.log(detail);
     this.setState({ detail });
     this.onSearch(detail.title);
   }
