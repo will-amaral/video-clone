@@ -1,68 +1,23 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Clone do Youtube
 
-## Available Scripts
+Este projeto foi criado como um tutorial para palestras e cursos básicos de React. O objetivo é ensinar de forma simplificada o funcionamento da biblioteca, com componentes *stateful* e *stateless*, conceitos básicos de *state* e *props*, bem como organização geral da estrutura de projeto. O boilerplate inicial do projeto foi feito com [Create React App](https://github.com/facebook/create-react-app), e a estilização foi feito com [Bulma](https://bulma.io) e [Bloomer](https://bloomer.js.org). 
 
-In the project directory, you can run:
+## Live App
 
-### `npm start`
+A aplicação completa pode ser visualizada [aqui](https://will-amaral.github.io/video-clone).
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Rodando localmente
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+#### Requisitos
 
-### `npm test`
+- [Node.js](https://nodejs.org/) (LTS mais recente)
+- [Yarn](https://yarnpkg.com/)
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### Para executar
 
-### `npm run build`
+- `git clone git@github.com:will-amaral/video-clone.git`
+- `cd video-clone`
+- `yarn` (instala todas as dependências)
+- `yarn start` (Iniciar o servidor de desenvolvimento)
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Além de start, o projeto inclui os scripts de `build` (compila um bundle), `test` e `deploy`. 
