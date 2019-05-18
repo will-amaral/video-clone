@@ -10,7 +10,6 @@ import SearchBar from './components/search-bar';
 import VideoDetail from './components/video-detail';
 import VideoList from './components/video-list';
 
-console.log(process.env);
 const API_KEY = process.env.REACT_APP_API_KEY;
 const opts = { maxResults: 6, key: API_KEY, type: 'video' };  
 
