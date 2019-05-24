@@ -1,17 +1,25 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
     Field,
     Control,
     Input
 } from 'bloomer';
 
-const SearchBar = props => {
+function SearchBar(props){
+    const [text, setText] = useState('');
+    let timeout = null;
+
+    function onChange(event) {
+        setText(event.target.value);
+        props.onSearch(text);
+    }
+
     return (
         <Field>
             <Control>
                 <Input
-                    value={props.value}
-                    onChange={props.handleChange}
+                    value={text}
+                    onChange={onChange}
                     style={{ marginBottom: 20  }}
                     placeholder="Pesquisar"
                 />

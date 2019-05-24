@@ -16,40 +16,24 @@ const opts = { maxResults: 6, key: API_KEY, type: 'video' };
 class App extends Component {
   constructor(props) {
     super(props);
-
-    this.state = {
-      videos: [],
-      detail: null,
-      text: ''
-    };
-    this.timeout = null;
-    this.onSearch = this.onSearch.bind(this);
-    this.onSelect = this.onSelect.bind(this);
-    this.handleChange = this.handleChange.bind(this);
-    this.onLoad(' ');
+    this.onSearch.bind(this);
+    this.onSearch('');
   }
 
-  async onLoad(busca) {
-    await this.onSearch(busca);
-    this.setState({ detail: this.state.videos[0]});
-  }
+  state = {
+    videos: [],
+    detail: null
+  };
 
-  async onSearch(busca) {
+  onSearch = async (busca) => {
     let videos = await YTSearch(busca, opts);
     this.setState({
-        videos: videos.results
+        videos: videos.results,
+        detail: videos.results[0]
       });
   }
 
-  handleChange(event) {
-    this.setState({ text: event.target.value });
-    if (this.timeout) {
-      clearTimeout(this.timeout);
-    }
-    this.timeout = setTimeout(() => { this.onLoad(this.state.text) }, 420);
-  }
-
-  onSelect(detail) {
+  onSelect = (detail) => {
     this.setState({ detail });
     this.onSearch(detail.title);
   }
@@ -58,7 +42,7 @@ class App extends Component {
     return (
       <Section>
         <Container>
-          <SearchBar value={this.state.text} handleChange={this.handleChange}/>
+          <SearchBar onSearch={this.onSearch}/>
           <Columns>
             <VideoDetail video={this.state.detail}/>
             <VideoList videos={this.state.videos} onSelect={this.onSelect}/>

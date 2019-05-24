@@ -7,7 +7,7 @@ import {
     Button
 } from 'bloomer';
 
-const VideoDetail = props => {
+function VideoDetail(props){
     if (!props.video) {
         return (
             <Column isSize="2/3" hasTextAlign="centered">
