@@ -7,26 +7,31 @@ import {
     Button
 } from 'bloomer';
 
-function VideoDetail(props){
-    if (!props.video) {
+// Recebemos o prop video que foi passado como prop diretamente. 
+function VideoDetail({video}){
+    // Como a construção do componente é mais rápida que a chamda da API
+    // Colocamos um loader para ser renderizado, que será exibido enquanto
+    // o vídeo estiver vazio.
+    if (!video) {
         return (
             <Column isSize="2/3" hasTextAlign="centered">
                 <Button isLoading />
             </Column>
         );
     }
-
-    const ID = props.video.id;
-    const URL = `https://www.youtube.com/embed/${ID}?autoplay=1`;
+    // Após a chamada da API ter finalizado, podemos construir a url 
+    // utilizando o identificador único do vídeo que foi passado como prop.
+    // Para melhorar a experiência, passamos o autoplay como parâmetro
+    const url = `https://www.youtube.com/embed/${video.id}?autoplay=1`;
 
     return (
         <Column isSize="2/3">
             <Container className="youtube-player">
-                <iframe title="Youtube Frame"src={URL} allowFullScreen/>
+                <iframe title="Youtube Frame"src={url} allow='autoplay' allowFullScreen/>
             </Container>
             <Content>
-                <Title>{props.video.title}</Title>
-                <p>{props.video.description}</p>
+                <Title>{video.title}</Title>
+                <p>{video.description}</p>
             </Content>
         </Column>
     );

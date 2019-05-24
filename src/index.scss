@@ -1,10 +1,14 @@
+// Os arquivos sass possuem uma sintaxe similar
+// ao css, mas com propriedades específicas,
+// como declaração de variáveis e importações. 
+// Aqui importamos o bulma no pacote
 @charset "utf-8";
 @import "~bulma/bulma";
+// Aqui colocamos classes especiais para estilizar o nosso 
+// player de vídeo e a seleção dos itens da lista de vídeos. 
 
-.video-list-item {
-	&:hover {
-		cursor: pointer;
-	}
+.video-list-item:hover {
+	cursor: pointer;
 }
 
 .youtube-player {
