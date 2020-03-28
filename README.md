@@ -1,6 +1,15 @@
 # Clone do Youtube
 
-Este projeto foi criado como um tutorial para palestras e cursos básicos de React. O objetivo é ensinar de forma simplificada o funcionamento da biblioteca, com componentes *stateful* e *stateless*, conceitos básicos de *state* e *props*, bem como organização geral da estrutura de projeto. O boilerplate inicial do projeto foi feito com [Create React App](https://github.com/facebook/create-react-app), e a estilização foi feito com [Bulma](https://bulma.io) e [Bloomer](https://bloomer.js.org). 
+Este projeto foi criado como um tutorial de React.
+Os conceitos a serem ensinados são:
+
+- _Stateless_ e _Stateful_ components;
+- _State_ e _props_;
+- Conceito de Context;
+- Uso básico de hooks;
+- useState, useEffect e useContext;
+- E muito mais;
+  O boilerplate inicial do projeto foi feito com [Create React App](https://github.com/facebook/create-react-app), e a estilização utilizou a biblioteca [Ant Design](https://ant.design/).
 
 ## Live App
 
@@ -22,4 +31,4 @@ Antes de iniciar o seu projeto, não se esqueça de adicionar a chave da sua API
 - `yarn` (instala todas as dependências)
 - `yarn start` (Iniciar o servidor de desenvolvimento)
 
-Além de start, o projeto inclui os scripts de `build` (compila um bundle), `test` e `deploy`. 
+Além de start, o projeto inclui os scripts de `build` (compila um bundle), `test` e `deploy`.
