@@ -15,6 +15,7 @@ export default ({ setSearch, setSelected, theme }) => {
     const input = document.querySelector('input.ant-input');
     if (theme) {
       input.style.background = '#0e0d0d';
+      input.style.color = 'white';
     } else {
       input.style.background = 'white';
     }
