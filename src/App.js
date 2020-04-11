@@ -17,7 +17,7 @@ export default () => {
   const { Header } = Layout;
 
   useEffect(() => {
-    const API_KEY = process.env.REACT_APP_YOUTUBE;
+    const API_KEY = 'AIzaSyAdmOMYWuhKmqfQnmBMEGvmRXQdGDLz5-0';
     const { gapi } = window;
     gapi.load('client', () => {
       gapi.client.setApiKey(API_KEY);

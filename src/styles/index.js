@@ -1,28 +1,28 @@
 export default {
-  header: theme => {
+  header: (theme) => {
     return {
       background: theme ? '#222' : '#fff',
       padding: 10,
-      textAlign: 'center'
+      textAlign: 'center',
     };
   },
   content: {
-    margin: '40px 0 20px 0'
+    margin: '40px 20px 20px 0',
   },
-  container: theme => {
+  container: (theme) => {
     return {
       background: theme ? '#222' : '#fff',
-      minHeight: '100vh'
+      minHeight: '100vh',
     };
   },
   spinner: {
-    margin: '20%'
+    margin: '20%',
   },
   iframeContainer: {
     position: 'relative',
     width: '100%',
     height: 0,
-    paddingBottom: '56.25%'
+    paddingBottom: '56.25%',
   },
   iframe: {
     position: 'absolute',
@@ -30,38 +30,38 @@ export default {
     left: 0,
     width: '100%',
     height: '100%',
-    borderRadius: 10
+    borderRadius: 10,
   },
-  itemTitle: theme => {
+  itemTitle: (theme) => {
     return {
       color: theme && '#fff',
       lineHeight: '1.2em',
-      margin: 0
+      margin: 0,
     };
   },
-  itemSubtitle: theme => {
+  itemSubtitle: (theme) => {
     return {
       color: theme && '#aaa',
-      margin: 0
+      margin: 0,
     };
   },
   listItem: {
     cursor: 'pointer',
-    margin: '20px 0'
+    margin: '20px 0',
   },
-  detailTitle: theme => {
+  detailTitle: (theme) => {
     return {
       color: theme && '#fff',
       fontSize: '2em',
-      marginTop: 20
+      marginTop: 20,
     };
   },
-  detailSubtitle: theme => {
+  detailSubtitle: (theme) => {
     return {
-      color: theme && '#aaa'
+      color: theme && '#aaa',
     };
   },
   search: {
-    width: '40%'
-  }
+    width: '40%',
+  },
 };

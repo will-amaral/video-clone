@@ -13,10 +13,10 @@ export default ({ videos }) => {
   return (
     <Content style={styles.content}>
       <Row>
-        <Col span={15} offset={1}>
+        <Col lg={16} offset={1}>
           <VideoDetail initial={videos[0]} />
         </Col>
-        <Col span={6} offset={1}>
+        <Col lg={6} offset={1}>
           <VideoList videos={videos.slice(1)} />
         </Col>
       </Row>
