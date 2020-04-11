@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.js": "/video-clone/static/js/main.67dc9255.chunk.js",
-    "main.js.map": "/video-clone/static/js/main.67dc9255.chunk.js.map",
+    "main.js": "/video-clone/static/js/main.86def9ff.chunk.js",
+    "main.js.map": "/video-clone/static/js/main.86def9ff.chunk.js.map",
     "runtime-main.js": "/video-clone/static/js/runtime-main.6f59aff1.js",
     "runtime-main.js.map": "/video-clone/static/js/runtime-main.6f59aff1.js.map",
     "static/css/2.573a4d37.chunk.css": "/video-clone/static/css/2.573a4d37.chunk.css",
     "static/js/2.4e094660.chunk.js": "/video-clone/static/js/2.4e094660.chunk.js",
     "static/js/2.4e094660.chunk.js.map": "/video-clone/static/js/2.4e094660.chunk.js.map",
     "index.html": "/video-clone/index.html",
-    "precache-manifest.45fa2886cb13696a92ae6586838570cb.js": "/video-clone/precache-manifest.45fa2886cb13696a92ae6586838570cb.js",
+    "precache-manifest.b1bb7af3f6ead7ca0e2da457a0cafe76.js": "/video-clone/precache-manifest.b1bb7af3f6ead7ca0e2da457a0cafe76.js",
     "service-worker.js": "/video-clone/service-worker.js",
     "static/css/2.573a4d37.chunk.css.map": "/video-clone/static/css/2.573a4d37.chunk.css.map",
     "static/js/2.4e094660.chunk.js.LICENSE.txt": "/video-clone/static/js/2.4e094660.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.6f59aff1.js",
     "static/css/2.573a4d37.chunk.css",
     "static/js/2.4e094660.chunk.js",
-    "static/js/main.67dc9255.chunk.js"
+    "static/js/main.86def9ff.chunk.js"
   ]
 }
