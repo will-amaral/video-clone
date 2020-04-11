@@ -6,9 +6,7 @@ import styles from 'styles';
 export default ({ setSearch, setSelected, theme }) => {
   const { Search } = Input;
 
-  console.log(theme);
-
-  const _onSearch = value => {
+  const _onSearch = (value) => {
     setSelected(false);
     setSearch(value);
   };

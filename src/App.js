@@ -15,9 +15,9 @@ export default () => {
   const [selected, setSelected] = useState();
 
   const { Header } = Layout;
-  const API_KEY = process.env.REACT_APP_API_KEY;
 
   useEffect(() => {
+    const API_KEY = process.env.REACT_APP_YOUTUBE;
     const { gapi } = window;
     gapi.load('client', () => {
       gapi.client.setApiKey(API_KEY);
@@ -29,9 +29,9 @@ export default () => {
 
   useEffect(() => {
     if (!youtube) return;
-    const _onSearch = async value => {
+    const _onSearch = async (value) => {
       const {
-        result: { items }
+        result: { items },
       } = await youtube.list({ q: value, part: 'snippet', type: 'video' });
       setVideos(items);
     };
